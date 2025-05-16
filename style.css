@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(57, 57, 57);
+  align-items: center;
+  height: 100vh;
+}
+.semaforo {
+  width: 200px;
+  background-color: rgb(22, 22, 22);
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 10px #000;
+  border: solid 3px #fff;
+}
+.stone {
+  background-color: #ffffff;
+  height: 190px;
+  width: 20px;
+  box-shadow: 0 0 10px #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 40px;
+  transform: translate(-750%, 290px);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: -1;
+}
+.luce {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #222;
+  margin: auto;
+  transition: background 0.3s;
+}
+.acceso.rosso {
+  background: red;
+}
+.acceso.giallo {
+  background: yellow;
+}
+.acceso.verde {
+  background: limegreen;
+}
