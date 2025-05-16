@@ -24,13 +24,11 @@ body {
   height: 190px;
   width: 20px;
   box-shadow: 0 0 10px #000;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 40px;
-  transform: translate(-750%, 290px);
+  position: absolute;
+  bottom: 15px; /* distanza sotto il semaforo */
+  left: 50%;
+  transform: translateX(-50%); /* centra rispetto al semaforo */
   border-radius: 4px;
-  overflow: hidden;
   z-index: -1;
 }
 .luce {
